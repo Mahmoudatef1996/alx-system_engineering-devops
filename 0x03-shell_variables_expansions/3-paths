@@ -1,2 +1,2 @@
 #!/bin/bash
-find "$PATH" -type d | wc
+echo $PATH | tr ':' ' ' | xargs -I {} find {} -type d | wc -l
