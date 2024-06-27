@@ -1,0 +1,2 @@
+#!/bin/bash
+set | grep -v '^HOME|^USER|^SHELL|^PATH'  # Filter out common environment variables
